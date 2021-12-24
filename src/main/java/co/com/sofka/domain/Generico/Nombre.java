@@ -12,8 +12,8 @@ public class Nombre implements ValueObject<String> {
         if(this.value.isBlank()){
             throw new IllegalArgumentException("El nombre no puede estar vacio");
         }
-        if (this.value.length() <= 5){
-            throw new IllegalArgumentException("Debes de tener mayor a 5 caracteres");
+        if (this.value.length() <= 2){
+            throw new IllegalArgumentException("Debes de tener mayor a 2 caracteres");
         }
 
         if (this.value.length() >= 80){

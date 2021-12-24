@@ -3,8 +3,9 @@ package co.com.sofka.domain.Retocador.Command;
 import co.com.sofka.domain.Retocador.Value.Caracteristica;
 import co.com.sofka.domain.Retocador.Value.IdFuncion;
 import co.com.sofka.domain.Retocador.Value.IdRetocador;
+import co.com.sofka.domain.generic.Command;
 
-public class ActualizarCaracteristicaDeFuncion {
+public class ActualizarCaracteristicaDeFuncion extends Command {
     private final IdRetocador idRetocador;
     private final IdFuncion idFuncion;
     private final Caracteristica caracteristica;

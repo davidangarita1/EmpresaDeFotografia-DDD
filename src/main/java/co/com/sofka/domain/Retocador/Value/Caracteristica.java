@@ -12,8 +12,8 @@ public class Caracteristica implements ValueObject<String> {
         if(this.value.isBlank()){
             throw new IllegalArgumentException("La caracteristica no puede estar vacia");
         }
-        if (this.value.length() <= 5){
-            throw new IllegalArgumentException("Debe de tener mas de 5 caracteres");
+        if (this.value.length() <= 3){
+            throw new IllegalArgumentException("Debe de tener mas de 3 caracteres");
         }
         if (this.value.length() >= 50){
             throw new IllegalArgumentException("Debe ser menor a 50 caracteres");
