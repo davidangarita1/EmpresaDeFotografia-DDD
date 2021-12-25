@@ -1,7 +1,7 @@
 package co.com.sofka.domain.Retocador.Event;
 
 import co.com.sofka.domain.Retocador.Value.IdFoto;
-import co.com.sofka.domain.Retocador.Value.PerfilDeColor;
+import co.com.sofka.domain.Generico.PerfilDeColor;
 import co.com.sofka.domain.generic.DomainEvent;
 
 public class PerfilDeColorDeFotoActualizado extends DomainEvent {

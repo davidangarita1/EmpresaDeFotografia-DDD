@@ -3,7 +3,7 @@ package co.com.sofka.domain.Retocador.Command;
 import co.com.sofka.domain.Retocador.Value.Formato;
 import co.com.sofka.domain.Retocador.Value.IdFoto;
 import co.com.sofka.domain.Retocador.Value.IdRetocador;
-import co.com.sofka.domain.Retocador.Value.PerfilDeColor;
+import co.com.sofka.domain.Generico.PerfilDeColor;
 import co.com.sofka.domain.generic.Command;
 
 public class AgregarFoto extends Command {

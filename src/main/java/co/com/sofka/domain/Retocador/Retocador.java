@@ -1,9 +1,6 @@
 package co.com.sofka.domain.Retocador;
 
-import co.com.sofka.domain.Generico.Descripcion;
-import co.com.sofka.domain.Generico.FechaFinal;
-import co.com.sofka.domain.Generico.FechaInicial;
-import co.com.sofka.domain.Generico.Nombre;
+import co.com.sofka.domain.Generico.*;
 import co.com.sofka.domain.Retocador.Event.*;
 import co.com.sofka.domain.Retocador.Value.*;
 import co.com.sofka.domain.generic.AggregateEvent;

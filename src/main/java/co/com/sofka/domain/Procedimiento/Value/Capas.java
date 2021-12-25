@@ -1,22 +1,19 @@
-package co.com.sofka.domain.Retocador.Value;
+package co.com.sofka.domain.Procedimiento.Value;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class PerfilDeColor implements ValueObject<String> {
+public class Capas implements ValueObject<String> {
     private final String value;
 
-    public PerfilDeColor(String value) {
+    public Capas(String value) {
         this.value = Objects.requireNonNull(value);
         if(this.value.isBlank()){
-            throw new IllegalArgumentException("El Perfil de color no puede estar vacio");
+            throw new IllegalArgumentException("Las capas no pueden estar vacias");
         }
-        if (this.value.length() <= 1){
-            throw new IllegalArgumentException("Debe de tener mas de 1 caracter");
-        }
-        if (this.value.length() >= 30){
-            throw new IllegalArgumentException("Debe ser menor a 30 caracteres");
+        if (this.value.length() <= 3){
+            throw new IllegalArgumentException("Debe de tener mas de 3 caracteres");
         }
     }
 
@@ -28,7 +25,7 @@ public class PerfilDeColor implements ValueObject<String> {
     public boolean equals(Object o){
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        PerfilDeColor that = (PerfilDeColor) o;
+        Capas that = (Capas) o;
         return Objects.equals(value, that.value);
     }
 
