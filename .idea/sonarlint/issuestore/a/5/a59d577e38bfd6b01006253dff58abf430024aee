@@ -1,0 +1,12 @@
+
+B
+java:S1602",Remove useless curly braces around statement(­‘™ñ
+G
+java:S1602 ",Remove useless curly braces around statement(§‡üÿÿÿÿ
+B
+java:S1602(",Remove useless curly braces around statement(í¹òë
+G
+java:S1602<",Remove useless curly braces around statement(ğöÖõüÿÿÿÿ
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æî¾şùÿÿÿÿ
