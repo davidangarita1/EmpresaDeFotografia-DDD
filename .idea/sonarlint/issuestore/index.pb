@@ -135,12 +135,8 @@ r
 Bsrc/main/java/co/com/sofka/domain/Requerimiento/Requerimiento.java,5\0\5048c3ec536247c35cb757bd2f8b915fc89bbf01
 x
 Hsrc/main/java/co/com/sofka/useCases/Retocador/CrearRetocadorUseCase.java,f\d\fdcac12d71dcba5e20f42f01a87cfdb10d1c8b84
-€
-Psrc/main/java/co/com/sofka/useCases/Requerimiento/CrearRequerimientoUseCase.java,d\e\de8474b3a2d7ebc8d0947358238fd9bc3c57ca39
 e
 5src/main/java/co/com/sofka/domain/Generico/Fecha.java,3\3\332d93f98d56d71c244d5d84195df4468b9a6385
-„
-Tsrc/test/java/co/com/sofka/useCases/Requerimiento/CrearRequerimientoUseCaseTest.java,9\3\93409dacdeb0e68e57328daa2cc2cd003649d142
 |
 Lsrc/test/java/co/com/sofka/useCases/Retocador/CrearRetocadorUseCaseTest.java,4\5\45c19d4eb1dfb65bf19001453fc2e4ecaba14c0a
 m
