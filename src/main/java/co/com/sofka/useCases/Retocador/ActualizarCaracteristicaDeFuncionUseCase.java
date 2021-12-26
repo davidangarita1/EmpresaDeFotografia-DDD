@@ -13,22 +13,13 @@ import co.com.sofka.domain.Retocador.Value.IdRetocador;
 
 public class ActualizarCaracteristicaDeFuncionUseCase extends UseCase<RequestCommand<ActualizarCaracteristicaDeFuncion>, ResponseEvents> {
     @Override
-    public void executeUseCase(RequestCommand<ActualizarCaracteristicaDeFuncion> actualizarCaracteristicaDeFuncionRequestCommand) {
+    public void executeUseCase(RequestCommand<ActualizarCaracteristicaDeFuncion> requestCommand) {
 
-        var command = actualizarCaracteristicaDeFuncionRequestCommand.getCommand();
+        var command = requestCommand.getCommand();
 
         Retocador retocador;
 
-        retocador = new Retocador(
-                new IdRetocador(),
-                new Nombre("Nombre")
-        );
-
-        retocador.agregarFuncion(
-                new IdFuncion(),
-                new Caracteristica("Caracteristica de Ejemplo"),
-                new Descripcion("Descripción de Ejemplo")
-        );
+        retocador = Retocador.from(command.getIdRetocador(), retrieveEvents());
 
         retocador.actualizarCaracteristicaDeFuncion(command.getIdFuncion(), command.getCaracteristica());
 

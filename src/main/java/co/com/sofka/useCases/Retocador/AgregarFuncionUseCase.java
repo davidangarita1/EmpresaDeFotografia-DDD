@@ -10,15 +10,9 @@ import co.com.sofka.domain.Retocador.Value.IdRetocador;
 
 public class AgregarFuncionUseCase extends UseCase<RequestCommand<AgregarFuncion>, ResponseEvents> {
     @Override
-    public void executeUseCase(RequestCommand<AgregarFuncion> agregarFuncionRequestCommand) {
-        var command = agregarFuncionRequestCommand.getCommand();
-
-        Retocador retocador;
-
-        retocador = new Retocador(
-                new IdRetocador(),
-                new Nombre("David")
-        );
+    public void executeUseCase(RequestCommand<AgregarFuncion> requestCommand) {
+        var command = requestCommand.getCommand();
+        var retocador = Retocador.from(command.getIdRetocador(), retrieveEvents());
 
         retocador.agregarFuncion(
                 command.getIdFuncion(),
