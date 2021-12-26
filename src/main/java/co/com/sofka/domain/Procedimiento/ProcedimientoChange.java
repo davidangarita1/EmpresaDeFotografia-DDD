@@ -1,7 +1,6 @@
 package co.com.sofka.domain.Procedimiento;
 
 import co.com.sofka.domain.Procedimiento.Event.*;
-import co.com.sofka.domain.Retocador.Value.IdFoto;
 import co.com.sofka.domain.generic.EventChange;
 import java.util.HashSet;
 
@@ -65,11 +64,11 @@ public class ProcedimientoChange extends EventChange {
             montaje.actualizarFondo(event.getFondo());
         });
 
-        /*apply((IdFotoAgregada event) -> {
-            procedimiento.idFotos.add(new IdFoto(
-                    event.getIdFoto()
-            ));
-        });*/
+        apply((IdFotoAgregada event) -> {
+            procedimiento.getIdFotoPorId(event.getIdFoto())
+                    .orElseThrow(() -> new IllegalArgumentException("No se encuentra el id de la foto"));
+            procedimiento.agregarIdFoto(event.getIdFoto());
+        });
 
         apply((MontajeAgregado event) -> {
            procedimiento.montajes.add(new Montaje(
