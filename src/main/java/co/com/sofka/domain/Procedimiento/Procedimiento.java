@@ -25,7 +25,7 @@ public class Procedimiento extends AggregateEvent<IdProcedimiento> {
         appendChange(new ProcedimientoCreado(fecha)).apply();
     }
 
-    public Procedimiento(IdProcedimiento entityId) {
+    private Procedimiento(IdProcedimiento entityId) {
         super(entityId);
         subscribe(new ProcedimientoChange(this));
     }

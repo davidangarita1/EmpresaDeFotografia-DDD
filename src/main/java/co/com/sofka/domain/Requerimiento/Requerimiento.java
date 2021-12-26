@@ -25,7 +25,7 @@ public class Requerimiento extends AggregateEvent<IdRequerimiento> {
         appendChange(new RequerimientoCreado(fecha)).apply();
     }
 
-    public Requerimiento(IdRequerimiento entityId) {
+    private Requerimiento(IdRequerimiento entityId) {
         super(entityId);
         subscribe(new RequerimientoChange(this));
     }
