@@ -1,0 +1,13 @@
+
+g
+java:S1128"ERemove this unused import 'co.com.sofka.domain.Generico.Descripcion'.(ºóÂĞúÿÿÿÿ8ÖÔìÄß/
+]
+java:S1128"@Remove this unused import 'co.com.sofka.domain.Generico.Nombre'.(¦ª´8ÖÔìÄß/
+q
+java:S1128
+"ORemove this unused import 'co.com.sofka.domain.Retocador.Value.Caracteristica'.(°®Á¹ıÿÿÿÿ8×ÔìÄß/
+l
+java:S1128"JRemove this unused import 'co.com.sofka.domain.Retocador.Value.IdFuncion'.(“…ŒÈÿÿÿÿÿ8×ÔìÄß/
+i
+java:S1128"LRemove this unused import 'co.com.sofka.domain.Retocador.Value.IdRetocador'.(ëÆÍ£8ØÔìÄß/
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìÇ‡

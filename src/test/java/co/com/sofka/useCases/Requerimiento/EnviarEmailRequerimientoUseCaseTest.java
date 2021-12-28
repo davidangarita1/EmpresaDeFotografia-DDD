@@ -43,7 +43,7 @@ class EnviarEmailRequerimientoUseCaseTest {
         builder.addService(requerimientoService);
         useCase.addServiceBuilder(builder);
 
-        var events = UseCaseHandler.getInstance()
+        UseCaseHandler.getInstance()
                 .syncExecutor(useCase, new TriggeredEvent<>(event))
                 .orElseThrow();
 
